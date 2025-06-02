@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D6AFA463C43634D6C22738D /* libPods-CattleHorseClockProgramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E400B07E0C2C20DF5E7A26 /* libPods-CattleHorseClockProgramTests.a */; };
+		791D1AAF9D6A7142A19256E6 /* libPods-CattleHorseClockProgram-CattleHorseClockProgramUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96309BC4219D950941827A80 /* libPods-CattleHorseClockProgram-CattleHorseClockProgramUITests.a */; };
+		E2E7E4FD1B43ABDC6391FE58 /* libPods-CattleHorseClockProgram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 053241DED008D8E12A17FC80 /* libPods-CattleHorseClockProgram.a */; };
 		EA08D7852DEE006E000D277C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7842DEE006E000D277C /* AppDelegate.m */; };
 		EA08D78E2DEE006E000D277C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA08D78C2DEE006E000D277C /* Main.storyboard */; };
 		EA08D7902DEE006F000D277C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA08D78F2DEE006F000D277C /* Assets.xcassets */; };
@@ -15,6 +18,12 @@
 		EA08D7A02DEE0070000D277C /* CattleHorseClockProgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D79F2DEE0070000D277C /* CattleHorseClockProgramTests.m */; };
 		EA08D7AA2DEE0070000D277C /* CattleHorseClockProgramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7A92DEE0070000D277C /* CattleHorseClockProgramUITests.m */; };
 		EA08D7AC2DEE0070000D277C /* CattleHorseClockProgramUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7AB2DEE0070000D277C /* CattleHorseClockProgramUITestsLaunchTests.m */; };
+		EA08D7BA2DEE05DF000D277C /* CHCPSlpashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7B92DEE05DF000D277C /* CHCPSlpashViewController.m */; };
+		EA08D7BD2DEE0623000D277C /* CHCPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7BC2DEE0623000D277C /* CHCPHomeViewController.m */; };
+		EA08D7C02DEE062C000D277C /* CHCPRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7BF2DEE062C000D277C /* CHCPRecordViewController.m */; };
+		EA08D7C32DEE0633000D277C /* CHCPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7C22DEE0633000D277C /* CHCPSettingViewController.m */; };
+		EA08D7C62DEE063C000D277C /* CHCPFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7C52DEE063C000D277C /* CHCPFeedbackViewController.m */; };
+		EA08D7C92DEE0652000D277C /* CHCPSelectRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7C82DEE0652000D277C /* CHCPSelectRootVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		053241DED008D8E12A17FC80 /* libPods-CattleHorseClockProgram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CattleHorseClockProgram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		483990AB93C020DC548EBD13 /* Pods-CattleHorseClockProgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CattleHorseClockProgram.debug.xcconfig"; path = "Target Support Files/Pods-CattleHorseClockProgram/Pods-CattleHorseClockProgram.debug.xcconfig"; sourceTree = "<group>"; };
+		5BFF868C8BFF0F25C44A8EAE /* Pods-CattleHorseClockProgramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CattleHorseClockProgramTests.debug.xcconfig"; path = "Target Support Files/Pods-CattleHorseClockProgramTests/Pods-CattleHorseClockProgramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60E400B07E0C2C20DF5E7A26 /* libPods-CattleHorseClockProgramTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CattleHorseClockProgramTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6925EEC822731263C5E25910 /* Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests.release.xcconfig"; path = "Target Support Files/Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests/Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		96309BC4219D950941827A80 /* libPods-CattleHorseClockProgram-CattleHorseClockProgramUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CattleHorseClockProgram-CattleHorseClockProgramUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F628F4987BB4798C366EDC /* Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests.debug.xcconfig"; path = "Target Support Files/Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests/Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0CB38D9B10E683DFF6C69D7 /* Pods-CattleHorseClockProgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CattleHorseClockProgram.release.xcconfig"; path = "Target Support Files/Pods-CattleHorseClockProgram/Pods-CattleHorseClockProgram.release.xcconfig"; sourceTree = "<group>"; };
 		EA08D7802DEE006E000D277C /* CattleHorseClockProgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CattleHorseClockProgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA08D7832DEE006E000D277C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA08D7842DEE006E000D277C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +65,20 @@
 		EA08D7A52DEE0070000D277C /* CattleHorseClockProgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CattleHorseClockProgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA08D7A92DEE0070000D277C /* CattleHorseClockProgramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CattleHorseClockProgramUITests.m; sourceTree = "<group>"; };
 		EA08D7AB2DEE0070000D277C /* CattleHorseClockProgramUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CattleHorseClockProgramUITestsLaunchTests.m; sourceTree = "<group>"; };
+		EA08D7B82DEE05DF000D277C /* CHCPSlpashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCPSlpashViewController.h; sourceTree = "<group>"; };
+		EA08D7B92DEE05DF000D277C /* CHCPSlpashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCPSlpashViewController.m; sourceTree = "<group>"; };
+		EA08D7BB2DEE0623000D277C /* CHCPHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCPHomeViewController.h; sourceTree = "<group>"; };
+		EA08D7BC2DEE0623000D277C /* CHCPHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCPHomeViewController.m; sourceTree = "<group>"; };
+		EA08D7BE2DEE062C000D277C /* CHCPRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCPRecordViewController.h; sourceTree = "<group>"; };
+		EA08D7BF2DEE062C000D277C /* CHCPRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCPRecordViewController.m; sourceTree = "<group>"; };
+		EA08D7C12DEE0633000D277C /* CHCPSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCPSettingViewController.h; sourceTree = "<group>"; };
+		EA08D7C22DEE0633000D277C /* CHCPSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCPSettingViewController.m; sourceTree = "<group>"; };
+		EA08D7C42DEE063C000D277C /* CHCPFeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCPFeedbackViewController.h; sourceTree = "<group>"; };
+		EA08D7C52DEE063C000D277C /* CHCPFeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCPFeedbackViewController.m; sourceTree = "<group>"; };
+		EA08D7C72DEE0652000D277C /* CHCPSelectRootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCPSelectRootVC.h; sourceTree = "<group>"; };
+		EA08D7C82DEE0652000D277C /* CHCPSelectRootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCPSelectRootVC.m; sourceTree = "<group>"; };
+		EA08D7CA2DEE06DD000D277C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FBA5361CB3EE87A4A9E555CE /* Pods-CattleHorseClockProgramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CattleHorseClockProgramTests.release.xcconfig"; path = "Target Support Files/Pods-CattleHorseClockProgramTests/Pods-CattleHorseClockProgramTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E7E4FD1B43ABDC6391FE58 /* libPods-CattleHorseClockProgram.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6AFA463C43634D6C22738D /* libPods-CattleHorseClockProgramTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +102,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791D1AAF9D6A7142A19256E6 /* libPods-CattleHorseClockProgram-CattleHorseClockProgramUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63A6234FE7C2473B634D8347 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				053241DED008D8E12A17FC80 /* libPods-CattleHorseClockProgram.a */,
+				96309BC4219D950941827A80 /* libPods-CattleHorseClockProgram-CattleHorseClockProgramUITests.a */,
+				60E400B07E0C2C20DF5E7A26 /* libPods-CattleHorseClockProgramTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAE8255AE1657EEDCF1A5B3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				483990AB93C020DC548EBD13 /* Pods-CattleHorseClockProgram.debug.xcconfig */,
+				D0CB38D9B10E683DFF6C69D7 /* Pods-CattleHorseClockProgram.release.xcconfig */,
+				A2F628F4987BB4798C366EDC /* Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests.debug.xcconfig */,
+				6925EEC822731263C5E25910 /* Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests.release.xcconfig */,
+				5BFF868C8BFF0F25C44A8EAE /* Pods-CattleHorseClockProgramTests.debug.xcconfig */,
+				FBA5361CB3EE87A4A9E555CE /* Pods-CattleHorseClockProgramTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA08D7772DEE006E000D277C = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +139,8 @@
 				EA08D79E2DEE0070000D277C /* CattleHorseClockProgramTests */,
 				EA08D7A82DEE0070000D277C /* CattleHorseClockProgramUITests */,
 				EA08D7812DEE006E000D277C /* Products */,
+				DAE8255AE1657EEDCF1A5B3D /* Pods */,
+				63A6234FE7C2473B634D8347 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +164,19 @@
 				EA08D7912DEE006F000D277C /* LaunchScreen.storyboard */,
 				EA08D7942DEE006F000D277C /* Info.plist */,
 				EA08D7952DEE006F000D277C /* main.m */,
+				EA08D7B82DEE05DF000D277C /* CHCPSlpashViewController.h */,
+				EA08D7B92DEE05DF000D277C /* CHCPSlpashViewController.m */,
+				EA08D7BB2DEE0623000D277C /* CHCPHomeViewController.h */,
+				EA08D7BC2DEE0623000D277C /* CHCPHomeViewController.m */,
+				EA08D7BE2DEE062C000D277C /* CHCPRecordViewController.h */,
+				EA08D7BF2DEE062C000D277C /* CHCPRecordViewController.m */,
+				EA08D7C12DEE0633000D277C /* CHCPSettingViewController.h */,
+				EA08D7C22DEE0633000D277C /* CHCPSettingViewController.m */,
+				EA08D7C42DEE063C000D277C /* CHCPFeedbackViewController.h */,
+				EA08D7C52DEE063C000D277C /* CHCPFeedbackViewController.m */,
+				EA08D7C72DEE0652000D277C /* CHCPSelectRootVC.h */,
+				EA08D7C82DEE0652000D277C /* CHCPSelectRootVC.m */,
+				EA08D7CA2DEE06DD000D277C /* PrefixHeader.pch */,
 			);
 			path = CattleHorseClockProgram;
 			sourceTree = "<group>";
@@ -133,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA08D7AF2DEE0070000D277C /* Build configuration list for PBXNativeTarget "CattleHorseClockProgram" */;
 			buildPhases = (
+				C35E8EF94D23C9C518CF439A /* [CP] Check Pods Manifest.lock */,
 				EA08D77C2DEE006E000D277C /* Sources */,
 				EA08D77D2DEE006E000D277C /* Frameworks */,
 				EA08D77E2DEE006E000D277C /* Resources */,
@@ -150,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA08D7B22DEE0070000D277C /* Build configuration list for PBXNativeTarget "CattleHorseClockProgramTests" */;
 			buildPhases = (
+				DDE7E4CD06066C841EBD03C5 /* [CP] Check Pods Manifest.lock */,
 				EA08D7972DEE0070000D277C /* Sources */,
 				EA08D7982DEE0070000D277C /* Frameworks */,
 				EA08D7992DEE0070000D277C /* Resources */,
@@ -168,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA08D7B52DEE0070000D277C /* Build configuration list for PBXNativeTarget "CattleHorseClockProgramUITests" */;
 			buildPhases = (
+				D2FC1EDC12BA8A540658C68F /* [CP] Check Pods Manifest.lock */,
 				EA08D7A12DEE0070000D277C /* Sources */,
 				EA08D7A22DEE0070000D277C /* Frameworks */,
 				EA08D7A32DEE0070000D277C /* Resources */,
@@ -189,6 +264,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = CHCP;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					EA08D77F2DEE006E000D277C = {
@@ -251,13 +327,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C35E8EF94D23C9C518CF439A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CattleHorseClockProgram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2FC1EDC12BA8A540658C68F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDE7E4CD06066C841EBD03C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CattleHorseClockProgramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA08D77C2DEE006E000D277C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA08D7C92DEE0652000D277C /* CHCPSelectRootVC.m in Sources */,
+				EA08D7BA2DEE05DF000D277C /* CHCPSlpashViewController.m in Sources */,
+				EA08D7C02DEE062C000D277C /* CHCPRecordViewController.m in Sources */,
+				EA08D7C62DEE063C000D277C /* CHCPFeedbackViewController.m in Sources */,
+				EA08D7BD2DEE0623000D277C /* CHCPHomeViewController.m in Sources */,
 				EA08D7852DEE006E000D277C /* AppDelegate.m in Sources */,
 				EA08D7962DEE006F000D277C /* main.m in Sources */,
+				EA08D7C32DEE0633000D277C /* CHCPSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,11 +582,13 @@
 		};
 		EA08D7B02DEE0070000D277C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 483990AB93C020DC548EBD13 /* Pods-CattleHorseClockProgram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CattleHorseClockProgram/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CattleHorseClockProgram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -443,6 +596,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,11 +611,13 @@
 		};
 		EA08D7B12DEE0070000D277C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0CB38D9B10E683DFF6C69D7 /* Pods-CattleHorseClockProgram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CattleHorseClockProgram/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CattleHorseClockProgram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,6 +625,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,6 +640,7 @@
 		};
 		EA08D7B32DEE0070000D277C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BFF868C8BFF0F25C44A8EAE /* Pods-CattleHorseClockProgramTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +658,7 @@
 		};
 		EA08D7B42DEE0070000D277C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA5361CB3EE87A4A9E555CE /* Pods-CattleHorseClockProgramTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +676,7 @@
 		};
 		EA08D7B62DEE0070000D277C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2F628F4987BB4798C366EDC /* Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -532,6 +692,7 @@
 		};
 		EA08D7B72DEE0070000D277C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6925EEC822731263C5E25910 /* Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
