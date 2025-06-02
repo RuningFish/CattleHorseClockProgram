@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA08D7852DEE006E000D277C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7842DEE006E000D277C /* AppDelegate.m */; };
+		EA08D78E2DEE006E000D277C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA08D78C2DEE006E000D277C /* Main.storyboard */; };
+		EA08D7902DEE006F000D277C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA08D78F2DEE006F000D277C /* Assets.xcassets */; };
+		EA08D7932DEE006F000D277C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA08D7912DEE006F000D277C /* LaunchScreen.storyboard */; };
+		EA08D7962DEE006F000D277C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7952DEE006F000D277C /* main.m */; };
+		EA08D7A02DEE0070000D277C /* CattleHorseClockProgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D79F2DEE0070000D277C /* CattleHorseClockProgramTests.m */; };
+		EA08D7AA2DEE0070000D277C /* CattleHorseClockProgramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7A92DEE0070000D277C /* CattleHorseClockProgramUITests.m */; };
+		EA08D7AC2DEE0070000D277C /* CattleHorseClockProgramUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7AB2DEE0070000D277C /* CattleHorseClockProgramUITestsLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA08D79C2DEE0070000D277C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA08D7782DEE006E000D277C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA08D77F2DEE006E000D277C;
+			remoteInfo = CattleHorseClockProgram;
+		};
+		EA08D7A62DEE0070000D277C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA08D7782DEE006E000D277C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA08D77F2DEE006E000D277C;
+			remoteInfo = CattleHorseClockProgram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA08D7802DEE006E000D277C /* CattleHorseClockProgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CattleHorseClockProgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA08D7832DEE006E000D277C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA08D7842DEE006E000D277C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA08D78D2DEE006E000D277C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA08D78F2DEE006F000D277C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA08D7922DEE006F000D277C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA08D7942DEE006F000D277C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA08D7952DEE006F000D277C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA08D79B2DEE0070000D277C /* CattleHorseClockProgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CattleHorseClockProgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA08D79F2DEE0070000D277C /* CattleHorseClockProgramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CattleHorseClockProgramTests.m; sourceTree = "<group>"; };
+		EA08D7A52DEE0070000D277C /* CattleHorseClockProgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CattleHorseClockProgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA08D7A92DEE0070000D277C /* CattleHorseClockProgramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CattleHorseClockProgramUITests.m; sourceTree = "<group>"; };
+		EA08D7AB2DEE0070000D277C /* CattleHorseClockProgramUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CattleHorseClockProgramUITestsLaunchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA08D77D2DEE006E000D277C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA08D7982DEE0070000D277C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA08D7A22DEE0070000D277C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA08D7772DEE006E000D277C = {
+			isa = PBXGroup;
+			children = (
+				EA08D7822DEE006E000D277C /* CattleHorseClockProgram */,
+				EA08D79E2DEE0070000D277C /* CattleHorseClockProgramTests */,
+				EA08D7A82DEE0070000D277C /* CattleHorseClockProgramUITests */,
+				EA08D7812DEE006E000D277C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA08D7812DEE006E000D277C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA08D7802DEE006E000D277C /* CattleHorseClockProgram.app */,
+				EA08D79B2DEE0070000D277C /* CattleHorseClockProgramTests.xctest */,
+				EA08D7A52DEE0070000D277C /* CattleHorseClockProgramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA08D7822DEE006E000D277C /* CattleHorseClockProgram */ = {
+			isa = PBXGroup;
+			children = (
+				EA08D7832DEE006E000D277C /* AppDelegate.h */,
+				EA08D7842DEE006E000D277C /* AppDelegate.m */,
+				EA08D78C2DEE006E000D277C /* Main.storyboard */,
+				EA08D78F2DEE006F000D277C /* Assets.xcassets */,
+				EA08D7912DEE006F000D277C /* LaunchScreen.storyboard */,
+				EA08D7942DEE006F000D277C /* Info.plist */,
+				EA08D7952DEE006F000D277C /* main.m */,
+			);
+			path = CattleHorseClockProgram;
+			sourceTree = "<group>";
+		};
+		EA08D79E2DEE0070000D277C /* CattleHorseClockProgramTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA08D79F2DEE0070000D277C /* CattleHorseClockProgramTests.m */,
+			);
+			path = CattleHorseClockProgramTests;
+			sourceTree = "<group>";
+		};
+		EA08D7A82DEE0070000D277C /* CattleHorseClockProgramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA08D7A92DEE0070000D277C /* CattleHorseClockProgramUITests.m */,
+				EA08D7AB2DEE0070000D277C /* CattleHorseClockProgramUITestsLaunchTests.m */,
+			);
+			path = CattleHorseClockProgramUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA08D77F2DEE006E000D277C /* CattleHorseClockProgram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA08D7AF2DEE0070000D277C /* Build configuration list for PBXNativeTarget "CattleHorseClockProgram" */;
+			buildPhases = (
+				EA08D77C2DEE006E000D277C /* Sources */,
+				EA08D77D2DEE006E000D277C /* Frameworks */,
+				EA08D77E2DEE006E000D277C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CattleHorseClockProgram;
+			productName = CattleHorseClockProgram;
+			productReference = EA08D7802DEE006E000D277C /* CattleHorseClockProgram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA08D79A2DEE0070000D277C /* CattleHorseClockProgramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA08D7B22DEE0070000D277C /* Build configuration list for PBXNativeTarget "CattleHorseClockProgramTests" */;
+			buildPhases = (
+				EA08D7972DEE0070000D277C /* Sources */,
+				EA08D7982DEE0070000D277C /* Frameworks */,
+				EA08D7992DEE0070000D277C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA08D79D2DEE0070000D277C /* PBXTargetDependency */,
+			);
+			name = CattleHorseClockProgramTests;
+			productName = CattleHorseClockProgramTests;
+			productReference = EA08D79B2DEE0070000D277C /* CattleHorseClockProgramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA08D7A42DEE0070000D277C /* CattleHorseClockProgramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA08D7B52DEE0070000D277C /* Build configuration list for PBXNativeTarget "CattleHorseClockProgramUITests" */;
+			buildPhases = (
+				EA08D7A12DEE0070000D277C /* Sources */,
+				EA08D7A22DEE0070000D277C /* Frameworks */,
+				EA08D7A32DEE0070000D277C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA08D7A72DEE0070000D277C /* PBXTargetDependency */,
+			);
+			name = CattleHorseClockProgramUITests;
+			productName = CattleHorseClockProgramUITests;
+			productReference = EA08D7A52DEE0070000D277C /* CattleHorseClockProgramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA08D7782DEE006E000D277C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					EA08D77F2DEE006E000D277C = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					EA08D79A2DEE0070000D277C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = EA08D77F2DEE006E000D277C;
+					};
+					EA08D7A42DEE0070000D277C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = EA08D77F2DEE006E000D277C;
+					};
+				};
+			};
+			buildConfigurationList = EA08D77B2DEE006E000D277C /* Build configuration list for PBXProject "CattleHorseClockProgram" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA08D7772DEE006E000D277C;
+			productRefGroup = EA08D7812DEE006E000D277C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA08D77F2DEE006E000D277C /* CattleHorseClockProgram */,
+				EA08D79A2DEE0070000D277C /* CattleHorseClockProgramTests */,
+				EA08D7A42DEE0070000D277C /* CattleHorseClockProgramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA08D77E2DEE006E000D277C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA08D7932DEE006F000D277C /* LaunchScreen.storyboard in Resources */,
+				EA08D7902DEE006F000D277C /* Assets.xcassets in Resources */,
+				EA08D78E2DEE006E000D277C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA08D7992DEE0070000D277C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA08D7A32DEE0070000D277C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA08D77C2DEE006E000D277C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA08D7852DEE006E000D277C /* AppDelegate.m in Sources */,
+				EA08D7962DEE006F000D277C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA08D7972DEE0070000D277C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA08D7A02DEE0070000D277C /* CattleHorseClockProgramTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA08D7A12DEE0070000D277C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA08D7AA2DEE0070000D277C /* CattleHorseClockProgramUITests.m in Sources */,
+				EA08D7AC2DEE0070000D277C /* CattleHorseClockProgramUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA08D79D2DEE0070000D277C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA08D77F2DEE006E000D277C /* CattleHorseClockProgram */;
+			targetProxy = EA08D79C2DEE0070000D277C /* PBXContainerItemProxy */;
+		};
+		EA08D7A72DEE0070000D277C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA08D77F2DEE006E000D277C /* CattleHorseClockProgram */;
+			targetProxy = EA08D7A62DEE0070000D277C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA08D78C2DEE006E000D277C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA08D78D2DEE006E000D277C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA08D7912DEE006F000D277C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA08D7922DEE006F000D277C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA08D7AD2DEE0070000D277C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA08D7AE2DEE0070000D277C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA08D7B02DEE0070000D277C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CattleHorseClockProgram/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "www.-rf.com.CattleHorseClockProgram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA08D7B12DEE0070000D277C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CattleHorseClockProgram/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "www.-rf.com.CattleHorseClockProgram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA08D7B32DEE0070000D277C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "www.-rf.com.CattleHorseClockProgramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CattleHorseClockProgram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CattleHorseClockProgram";
+			};
+			name = Debug;
+		};
+		EA08D7B42DEE0070000D277C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "www.-rf.com.CattleHorseClockProgramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CattleHorseClockProgram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CattleHorseClockProgram";
+			};
+			name = Release;
+		};
+		EA08D7B62DEE0070000D277C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "www.-rf.com.CattleHorseClockProgramUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CattleHorseClockProgram;
+			};
+			name = Debug;
+		};
+		EA08D7B72DEE0070000D277C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "www.-rf.com.CattleHorseClockProgramUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CattleHorseClockProgram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA08D77B2DEE006E000D277C /* Build configuration list for PBXProject "CattleHorseClockProgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA08D7AD2DEE0070000D277C /* Debug */,
+				EA08D7AE2DEE0070000D277C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA08D7AF2DEE0070000D277C /* Build configuration list for PBXNativeTarget "CattleHorseClockProgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA08D7B02DEE0070000D277C /* Debug */,
+				EA08D7B12DEE0070000D277C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA08D7B22DEE0070000D277C /* Build configuration list for PBXNativeTarget "CattleHorseClockProgramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA08D7B32DEE0070000D277C /* Debug */,
+				EA08D7B42DEE0070000D277C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA08D7B52DEE0070000D277C /* Build configuration list for PBXNativeTarget "CattleHorseClockProgramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA08D7B62DEE0070000D277C /* Debug */,
+				EA08D7B72DEE0070000D277C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA08D7782DEE006E000D277C /* Project object */;
+}
