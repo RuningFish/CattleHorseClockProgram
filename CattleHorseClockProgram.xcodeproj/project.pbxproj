@@ -209,6 +209,7 @@
 				EA08D77C2DEE006E000D277C /* Sources */,
 				EA08D77D2DEE006E000D277C /* Frameworks */,
 				EA08D77E2DEE006E000D277C /* Resources */,
+				8399A625AABC9074B9CC0B86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,6 +247,7 @@
 				EA08D7A12DEE0070000D277C /* Sources */,
 				EA08D7A22DEE0070000D277C /* Frameworks */,
 				EA08D7A32DEE0070000D277C /* Resources */,
+				396D6CAF34322822AF186C35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,6 +330,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		396D6CAF34322822AF186C35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests/Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests/Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests/Pods-CattleHorseClockProgram-CattleHorseClockProgramUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8399A625AABC9074B9CC0B86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CattleHorseClockProgram/Pods-CattleHorseClockProgram-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CattleHorseClockProgram/Pods-CattleHorseClockProgram-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CattleHorseClockProgram/Pods-CattleHorseClockProgram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C35E8EF94D23C9C518CF439A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -588,6 +624,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CattleHorseClockProgram/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CattleHorseClockProgram/Info.plist;
@@ -617,6 +654,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CattleHorseClockProgram/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CattleHorseClockProgram/Info.plist;

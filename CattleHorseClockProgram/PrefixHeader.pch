@@ -10,3 +10,4 @@
 #define KCattleHorseClockRecordPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES) objectAtIndex:0] stringByAppendingPathComponent:@"CattleHorseClockRecord.archive"]
 #define KCattleHorseClockRecordAddSuccessNotificationName @"KCattleHorseClockRecordAddSuccessNotificationName"
 #import "Masonry.h"
+#import "BRPickerView.h"
