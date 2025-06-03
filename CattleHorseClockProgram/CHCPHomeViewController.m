@@ -24,6 +24,18 @@
     titleLabel.textColor = [UIColor blackColor];
     titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.font = [UIFont systemFontOfSize:30];
+    
+    NSLog(@"首页 ----- viewDidLoad ");
+    
+    UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:addButton];
+    addButton.frame = CGRectMake(20, 180, [UIScreen mainScreen].bounds.size.width-40, 60);
+    [addButton setTitle:@"+ 添加分类" forState:UIControlStateNormal];
+    [addButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    addButton.titleLabel.font = [UIFont systemFontOfSize:25];
+    [addButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+    [addButton addTarget:self action:@selector(addClick:) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 /*
