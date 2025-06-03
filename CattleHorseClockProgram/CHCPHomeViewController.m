@@ -17,6 +17,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = MAIN_VIEW_COLOR;
+
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(20,90, [UIScreen mainScreen].bounds.size.width-40, 60)];
+    [self.view addSubview:titleLabel];
+    titleLabel.text = @"账号管理助手";
+    titleLabel.textColor = [UIColor blackColor];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.font = [UIFont systemFontOfSize:30];
 }
 
 /*
