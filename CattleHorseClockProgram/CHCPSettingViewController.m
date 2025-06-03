@@ -3,7 +3,7 @@
 //  CattleHorseClockProgram
 //
 //  Created by runingfish on 2025/6/3.
-// 设置页面
+//
 
 #import "CHCPSettingViewController.h"
 
