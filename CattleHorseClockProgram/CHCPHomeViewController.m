@@ -72,9 +72,11 @@
     chcp_home_title_label.numberOfLines = 0;
     [chcp_home_title_label sizeToFit];
     
-    UIImageView *chcp_home_imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(chcp_home_title_label.frame) + 10, chcp_home_scrollView.frame.size.width, chcp_home_scrollView.frame.size.width / 16 * 9)];
+    UIImageView *chcp_home_imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(chcp_home_title_label.frame) + 10, chcp_home_scrollView.frame.size.width - 20, (chcp_home_scrollView.frame.size.width - 20) / 16 * 9)];
     [chcp_home_scrollView addSubview:chcp_home_imageView];
     chcp_home_imageView.image = [UIImage imageNamed:@"cattle_01"];
+    chcp_home_imageView.layer.cornerRadius = 8;
+    chcp_home_imageView.layer.masksToBounds = YES;
     
     CGFloat chcp_home_item_startY = CGRectGetMaxY(chcp_home_imageView.frame) + 10;
     for (int i = 0; i < self.chcp_home_item_list.count; i++) {
@@ -148,9 +150,12 @@
 - (void)selectWithType:(NSString *)type item:(NSDictionary *)item_dict tag:(NSInteger)tag {
     UITextField *textField = self.chcp_home_item_textField_list[tag];
     if ([type isEqualToString:@"select-custom"]) {
-        BRDatePickerView *pickView = [[BRDatePickerView alloc] initWithPickerMode:BRDatePickerModeY];
-        pickView.monthNames = @[@"1",@"2",@"3"];
+        BRTextPickerView *pickView = [[BRTextPickerView alloc] initWithPickerMode:BRTextPickerComponentSingle];
+        pickView.dataSourceArr = item_dict[@"data"];
         [pickView show];
+        pickView.singleResultBlock = ^(BRTextModel * _Nullable model, NSInteger index) {
+            textField.text = model.text;
+        };
     } else if ([type isEqualToString:@"select-time"]) {
         [BRDatePickerView showDatePickerWithMode:BRDatePickerModeYMD title:@"选择时间" selectValue:nil minDate:nil maxDate:[NSDate date] isAutoSelect:YES resultBlock:^(NSDate * _Nullable selectDate, NSString * _Nullable selectValue) {
             textField.text = selectValue;
