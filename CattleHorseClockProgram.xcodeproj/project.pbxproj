@@ -24,6 +24,9 @@
 		EA08D7C32DEE0633000D277C /* CHCPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7C22DEE0633000D277C /* CHCPSettingViewController.m */; };
 		EA08D7C62DEE063C000D277C /* CHCPFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7C52DEE063C000D277C /* CHCPFeedbackViewController.m */; };
 		EA08D7C92DEE0652000D277C /* CHCPSelectRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7C82DEE0652000D277C /* CHCPSelectRootVC.m */; };
+		EA08D7D52DF52EDB000D277C /* CHCPHomeCountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7D22DF52EDB000D277C /* CHCPHomeCountdownView.m */; };
+		EA08D7D62DF52EDB000D277C /* CHCPDigitScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7D42DF52EDB000D277C /* CHCPDigitScrollView.m */; };
+		EA08D7D92DF53363000D277C /* CHCPRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA08D7D82DF53363000D277C /* CHCPRecordTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,12 @@
 		EA08D7C72DEE0652000D277C /* CHCPSelectRootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCPSelectRootVC.h; sourceTree = "<group>"; };
 		EA08D7C82DEE0652000D277C /* CHCPSelectRootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCPSelectRootVC.m; sourceTree = "<group>"; };
 		EA08D7CA2DEE06DD000D277C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EA08D7D12DF52EDB000D277C /* CHCPDigitScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCPDigitScrollView.h; sourceTree = "<group>"; };
+		EA08D7D22DF52EDB000D277C /* CHCPHomeCountdownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCPHomeCountdownView.m; sourceTree = "<group>"; };
+		EA08D7D32DF52EDB000D277C /* CHCPHomeCountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCPHomeCountdownView.h; sourceTree = "<group>"; };
+		EA08D7D42DF52EDB000D277C /* CHCPDigitScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCPDigitScrollView.m; sourceTree = "<group>"; };
+		EA08D7D72DF53363000D277C /* CHCPRecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCPRecordTableViewCell.h; sourceTree = "<group>"; };
+		EA08D7D82DF53363000D277C /* CHCPRecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCPRecordTableViewCell.m; sourceTree = "<group>"; };
 		FBA5361CB3EE87A4A9E555CE /* Pods-CattleHorseClockProgramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CattleHorseClockProgramTests.release.xcconfig"; path = "Target Support Files/Pods-CattleHorseClockProgramTests/Pods-CattleHorseClockProgramTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +186,12 @@
 				EA08D7C72DEE0652000D277C /* CHCPSelectRootVC.h */,
 				EA08D7C82DEE0652000D277C /* CHCPSelectRootVC.m */,
 				EA08D7CA2DEE06DD000D277C /* PrefixHeader.pch */,
+				EA08D7D12DF52EDB000D277C /* CHCPDigitScrollView.h */,
+				EA08D7D42DF52EDB000D277C /* CHCPDigitScrollView.m */,
+				EA08D7D32DF52EDB000D277C /* CHCPHomeCountdownView.h */,
+				EA08D7D22DF52EDB000D277C /* CHCPHomeCountdownView.m */,
+				EA08D7D72DF53363000D277C /* CHCPRecordTableViewCell.h */,
+				EA08D7D82DF53363000D277C /* CHCPRecordTableViewCell.m */,
 			);
 			path = CattleHorseClockProgram;
 			sourceTree = "<group>";
@@ -438,8 +453,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA08D7C92DEE0652000D277C /* CHCPSelectRootVC.m in Sources */,
+				EA08D7D92DF53363000D277C /* CHCPRecordTableViewCell.m in Sources */,
 				EA08D7BA2DEE05DF000D277C /* CHCPSlpashViewController.m in Sources */,
 				EA08D7C02DEE062C000D277C /* CHCPRecordViewController.m in Sources */,
+				EA08D7D62DF52EDB000D277C /* CHCPDigitScrollView.m in Sources */,
+				EA08D7D52DF52EDB000D277C /* CHCPHomeCountdownView.m in Sources */,
 				EA08D7C62DEE063C000D277C /* CHCPFeedbackViewController.m in Sources */,
 				EA08D7BD2DEE0623000D277C /* CHCPHomeViewController.m in Sources */,
 				EA08D7852DEE006E000D277C /* AppDelegate.m in Sources */,

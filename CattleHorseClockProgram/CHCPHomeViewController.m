@@ -367,56 +367,27 @@
     self.chcp_start_calculate = YES;
     
     [self setupUI];
-}
-
-
-NSDictionary<NSString *, NSNumber *> *calculateTimeDifferences(void) {
-    // 获取当前日历和时间
-    NSCalendar *calendar = [NSCalendar currentCalendar];
+    
+    NSMutableArray *chcp_record_arrays = [NSMutableArray array];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:KCattleHorseClockRecordPath]) {
+        chcp_record_arrays = [NSKeyedUnarchiver unarchiveObjectWithFile:KCattleHorseClockRecordPath];
+    }
+        
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    formatter.dateFormat = @"yyyy-MM-dd hh:mm:ss";
     NSDate *now = [NSDate date];
-    
-    // 获取当前日期组件
-    NSDateComponents *nowComponents = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond
-                                                 fromDate:now];
-    
-    // 创建早上9点的时间
-    NSDateComponents *nineAMComponents = [nowComponents copy];
-    nineAMComponents.hour = 9;
-    nineAMComponents.minute = 0;
-    nineAMComponents.second = 0;
-    NSDate *nineAM = [calendar dateFromComponents:nineAMComponents];
-    
-    // 创建下午6点的时间
-    NSDateComponents *sixPMComponents = [nowComponents copy];
-    sixPMComponents.hour = 18;
-    sixPMComponents.minute = 0;
-    sixPMComponents.second = 0;
-    NSDate *sixPM = [calendar dateFromComponents:sixPMComponents];
-    
-    // 计算时间差（秒）
-    NSTimeInterval diffToNineAM = [nineAM timeIntervalSinceDate:now];
-    NSTimeInterval diffToSixPM = [sixPM timeIntervalSinceDate:now];
-    
-    // 处理负值情况（如果时间已过，计算到明天的时间差）
-    if (diffToNineAM < 0) {
-        nineAMComponents.day += 1;
-        nineAM = [calendar dateFromComponents:nineAMComponents];
-        diffToNineAM = [nineAM timeIntervalSinceDate:now];
-    }
-    
-    if (diffToSixPM < 0) {
-        sixPMComponents.day += 1;
-        sixPM = [calendar dateFromComponents:sixPMComponents];
-        diffToSixPM = [sixPM timeIntervalSinceDate:now];
-    }
-    
-    // 返回结果字典
-    return @{
-        @"timeToNineAM": @(diffToNineAM),
-        @"timeToSixPM": @(diffToSixPM),
-        @"nineAM": nineAM,
-        @"sixPM": sixPM
+    NSString *dateString = [formatter stringFromDate:now];
+    NSDictionary *item_dict = @{
+        @"date":dateString,
+        @"type":[self.chcp_home_item_textField_list[0] text],
+        @"time":[self.chcp_home_item_textField_list[1] text],
+        @"money":[self.chcp_home_item_textField_list[3] text],
+        @"zhidu":[self.chcp_home_item_textField_list[4] text],
     };
+    
+    [chcp_record_arrays addObject:item_dict];
+    [NSKeyedArchiver archiveRootObject:chcp_record_arrays toFile:KCattleHorseClockRecordPath];
+    [[NSNotificationCenter defaultCenter] postNotificationName:KCattleHorseClockRecordAddSuccessNotificationName object:nil];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
