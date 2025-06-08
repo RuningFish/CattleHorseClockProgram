@@ -2,7 +2,7 @@
 //  PrefixHeader.pch
 //  CattleHorseClockProgram
 //
-//  Created by runingfish on 2025/6/3.
+//  
 //
 
 #define MAIN_VIEW_COLOR [UIColor colorWithRed:(217)/255.0 green:(231)/255.0 blue:(175)/255.0 alpha:1]

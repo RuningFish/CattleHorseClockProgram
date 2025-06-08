@@ -2,7 +2,7 @@
 //  CHCPDigitScrollView.h
 //  CattleHorseClockProgram
 //
-//  Created by runingfish on 2025/6/7.
+//  
 //
 
 #import <UIKit/UIKit.h>

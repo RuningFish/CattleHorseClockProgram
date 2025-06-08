@@ -2,7 +2,7 @@
 //  CHCPRecordTableViewCell.h
 //  CattleHorseClockProgram
 //
-//  Created by runingfish on 2025/6/8.
+//  
 //
 
 #import <UIKit/UIKit.h>
