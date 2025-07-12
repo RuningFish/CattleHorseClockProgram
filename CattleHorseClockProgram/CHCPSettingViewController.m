@@ -21,6 +21,8 @@
     self.chcp_setting_tableView.backgroundColor = [UIColor clearColor];
     self.view.backgroundColor = MAIN_VIEW_COLOR;
     self.chcp_setting_dataSource = @[@"清除缓存",@"版本更新",@"意见反馈"];
+    
+    NSLog(@"这是一个seting分支上的log提交");
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
