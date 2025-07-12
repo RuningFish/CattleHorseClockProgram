@@ -16,6 +16,7 @@
 @property (nonatomic, strong) UIView *chcp_home_middle_view;
 @property (nonatomic, strong) UIView *chcp_home_bottom_view;
 @property (nonatomic, strong) UIButton *chcp_home_calculate_button;
+@property (nonatomic, copy) NSString *chcp_last_date_string; // 记录上一次的时间
 @end
 
 @implementation CHCPHomeViewController
@@ -40,7 +41,7 @@
         },
         @{
             @"title":@"工作时间",
-            @"type":@"",
+            @"type":@"input",
             @"value":@"09:00 - 18:00"
         },
         @{
@@ -63,6 +64,7 @@
     
     self.chcp_home_item_textField_list = [NSMutableArray array];
     self.chcp_start_calculate = NO;
+    self.chcp_last_date_string = @"";
 }
 
 - (void)setupUI {
@@ -350,6 +352,8 @@
             
             if (self.chcp_start_calculate) {
                 [self setupUI];
+                // 添加记录
+                [self addRecord];
             }
         };
     } else if ([type isEqualToString:@"select-time"]) {
@@ -358,16 +362,27 @@
             
             if (self.chcp_start_calculate) {
                 [self setupUI];
+                // 添加记录
+                [self addRecord];
             }
         }];
     }
+
 }
 
 - (void)chcp_home_calculate_buttonClick:(UIButton *)button{
-    self.chcp_start_calculate = YES;
-    
-    [self setupUI];
-    
+    [self.view endEditing:YES];
+    dispatch_time_t timer = dispatch_time(DISPATCH_TIME_NOW, 0.5 * NSEC_PER_SEC);
+    dispatch_after(timer, dispatch_get_main_queue(), ^{
+        self.chcp_start_calculate = YES;
+        // 设置ui
+        [self setupUI];
+        // 添加记录
+        [self addRecord];
+    });
+}
+
+- (void)addRecord {
     NSMutableArray *chcp_record_arrays = [NSMutableArray array];
     if ([[NSFileManager defaultManager] fileExistsAtPath:KCattleHorseClockRecordPath]) {
         chcp_record_arrays = [NSKeyedUnarchiver unarchiveObjectWithFile:KCattleHorseClockRecordPath];
@@ -377,19 +392,26 @@
     formatter.dateFormat = @"yyyy-MM-dd hh:mm:ss";
     NSDate *now = [NSDate date];
     NSString *dateString = [formatter stringFromDate:now];
+    
+    if ([self.chcp_last_date_string isEqualToString:dateString]) {
+        return;
+    }
+    
+    self.chcp_last_date_string = dateString;
+    
     NSDictionary *item_dict = @{
         @"date":dateString,
         @"type":[self.chcp_home_item_textField_list[0] text],
         @"time":[self.chcp_home_item_textField_list[1] text],
+        @"ruzhi_time":[self.chcp_home_item_textField_list[2] text],
         @"money":[self.chcp_home_item_textField_list[3] text],
         @"zhidu":[self.chcp_home_item_textField_list[4] text],
     };
     
-    [chcp_record_arrays addObject:item_dict];
+    [chcp_record_arrays insertObject:item_dict atIndex:0];
     [NSKeyedArchiver archiveRootObject:chcp_record_arrays toFile:KCattleHorseClockRecordPath];
     [[NSNotificationCenter defaultCenter] postNotificationName:KCattleHorseClockRecordAddSuccessNotificationName object:nil];
 }
-
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self.view endEditing:YES];
 }
@@ -397,6 +419,9 @@
 - (void)money_end_edit:(NSNotification *)noti {
     if (self.chcp_start_calculate) {
         [self setupUI];
+        
+        // 添加记录
+        [self addRecord];
     }
 }
 

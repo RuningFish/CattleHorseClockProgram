@@ -11,6 +11,7 @@
 @property (nonatomic, strong) UILabel *chcp_record_item_titleLabel;
 @property (nonatomic, strong) UILabel *chcp_record_item_moneyLabel;
 @property (nonatomic, strong) UILabel *chcp_record_item_dateLabel;
+@property (nonatomic, strong) UILabel *chcp_record_item_ruzhiLabel;
 @property (nonatomic, strong) UILabel *chcp_record_item_zhiduLabel;
 @end
 
@@ -61,6 +62,12 @@
         self.chcp_record_item_zhiduLabel.textColor = [UIColor blackColor];
         self.chcp_record_item_zhiduLabel.textAlignment = NSTextAlignmentLeft;
         
+        self.chcp_record_item_ruzhiLabel = [[UILabel alloc] init];
+        [bottomView addSubview:self.chcp_record_item_ruzhiLabel];
+        self.chcp_record_item_ruzhiLabel.font = [UIFont systemFontOfSize:15];
+        self.chcp_record_item_ruzhiLabel.textColor = [UIColor blackColor];
+        self.chcp_record_item_ruzhiLabel.textAlignment = NSTextAlignmentLeft;
+        
         [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.top.offset(10);
             make.right.offset(-10);
@@ -88,10 +95,17 @@
             make.height.mas_equalTo(self.chcp_record_item_moneyLabel);
         }];
         
-        [self.chcp_record_item_zhiduLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.chcp_record_item_ruzhiLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(self.chcp_record_item_titleLabel.mas_left).offset(0);
             make.right.offset(-10);
             make.top.equalTo(self.chcp_record_item_dateLabel.mas_bottom).offset(0);
+            make.height.mas_equalTo(self.chcp_record_item_moneyLabel);
+        }];
+        
+        [self.chcp_record_item_zhiduLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.chcp_record_item_titleLabel.mas_left).offset(0);
+            make.right.offset(-10);
+            make.top.equalTo(self.chcp_record_item_ruzhiLabel.mas_bottom).offset(0);
             make.height.mas_equalTo(30);
             make.bottom.offset(-10);
         }];
@@ -104,8 +118,9 @@
     _dict = dict;
     self.chcp_record_item_titleLabel.text = [NSString stringWithFormat:@"工作时长:%@",dict[@"time"]];
     self.chcp_record_item_moneyLabel.text = [NSString stringWithFormat:@"月薪:%@ %@",dict[@"type"], dict[@"money"]];
-    self.chcp_record_item_dateLabel.text = [NSString stringWithFormat:@"%@",dict[@"date"]];
-    self.chcp_record_item_zhiduLabel.text = [NSString stringWithFormat:@"%@",dict[@"zhidu"]];
+    self.chcp_record_item_dateLabel.text = [NSString stringWithFormat:@"添加时间:%@",dict[@"date"]];
+    self.chcp_record_item_ruzhiLabel.text = [NSString stringWithFormat:@"入职时间:%@",dict[@"ruzhi_time"] ? : @"2025-06-01"];
+    self.chcp_record_item_zhiduLabel.text = [NSString stringWithFormat:@"工作制度:%@",dict[@"zhidu"]];
 }
 
 @end

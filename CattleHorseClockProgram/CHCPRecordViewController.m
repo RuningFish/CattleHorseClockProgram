@@ -18,6 +18,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = MAIN_VIEW_COLOR;
+    self.chcp_record_dataSource = [NSMutableArray array];
     [self chcp_record_setupUI];
     [self chcp_record_initData];
     
@@ -36,7 +37,14 @@
 }
 
 - (void)chcp_record_initData{
+//    NSArray *record_array = (NSArray *)[NSKeyedUnarchiver unarchiveObjectWithFile:KCattleHorseClockRecordPath];
     self.chcp_record_dataSource = [NSMutableArray arrayWithArray:[NSKeyedUnarchiver unarchiveObjectWithFile:KCattleHorseClockRecordPath]];
+//    [self.chcp_record_dataSource removeAllObjects];
+//    for (NSInteger i = record_array.count - 1; i >= 0; i --) {
+//        NSDictionary *item_dict = record_array[i];
+//        [self.chcp_record_dataSource addObject:item_dict];
+//    }
+    
     [self initTableHeaderView];
     [self.chcp_record_tableView reloadData];
 }

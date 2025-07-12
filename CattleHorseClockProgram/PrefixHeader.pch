@@ -7,7 +7,7 @@
 
 #define MAIN_VIEW_COLOR [UIColor colorWithRed:(217)/255.0 green:(231)/255.0 blue:(175)/255.0 alpha:1]
 
-#define KCattleHorseClockRecordPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES) objectAtIndex:0] stringByAppendingPathComponent:@"CattleHorseClockRecord.archive"]
+#define KCattleHorseClockRecordPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES) objectAtIndex:0] stringByAppendingPathComponent:@"CattleHorseClockRecord1N.archive"]
 #define KCattleHorseClockRecordAddSuccessNotificationName @"KCattleHorseClockRecordAddSuccessNotificationName"
 #import "Masonry.h"
 #import "BRPickerView.h"
